@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>The Taste of North Bengal</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  </head>
+  <body class="text-gray-900 font-poppins">
+    <!-- Header Hero Section -->
+    <header class="relative h-screen bg-cover bg-center bg-no-repeat" style="background-image: url('https://images.unsplash.com/photo-1601050690597-df0568f70950?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');">
+      <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+      <nav class="relative max-w-7xl mx-auto px-6 sm:px-12 lg:px-16 flex items-center justify-between h-24">
+        <h1 class="text-white text-3xl md:text-4xl font-bold tracking-wide select-none animate__animated animate__fadeInDown">
+          The Taste of North Bengal
+        </h1>
+        <ul class="hidden md:flex items-center space-x-0 text-white text-lg font-medium animate__animated animate__fadeInDown">
+          <li><a href="#about" class="hover:text-yellow-300 transition duration-300 px-4">About Us</a></li>
+          <li class="h-5 w-px bg-white bg-opacity-50"></li>
+          <li><a href="#menu" class="hover:text-yellow-300 transition duration-300 px-4">Menu</a></li>
+          <li class="h-5 w-px bg-white bg-opacity-50"></li>
+          <li><a href="#reservations" class="hover:text-yellow-300 transition duration-300 px-4">Reservations</a></li>
+          <li class="h-5 w-px bg-white bg-opacity-50"></li>
+          <li><a href="#gallery" class="hover:text-yellow-300 transition duration-300 px-4">Gallery</a></li>
+        </ul>
+        <a href="#reservations" class="hidden md:inline-block bg-yellow-600 hover:bg-yellow-700 text-white font-bold py-3 px-6 rounded-full transition duration-300 select-none ml-6 animate__animated animate__fadeInDown">
+          Reserve Now
+        </a>
+      </nav>
+
+      <div class="relative max-w-4xl mx-auto px-6 sm:px-12 lg:px-16 h-full flex flex-col justify-center text-center text-white">
+        <h2 class="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight mb-6 animate__animated animate__fadeInUp animate__delay-1s">
+          <span class="text-yellow-400">Authentic</span> North Bengali Cuisine
+        </h2>
+        <p class="text-lg sm:text-xl font-medium max-w-3xl mx-auto mb-8 animate__animated animate__fadeInUp animate__delay-1s">
+          Experience the rich, aromatic flavors of North Bengal, crafted with
+          traditional recipes and the freshest ingredients. Our menu celebrates
+          the region's culinary heritage in every bite.
+        </p>
+        <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6 animate__animated animate__fadeInUp animate__delay-1s">
+          <a href="#menu" class="bg-yellow-600 hover:bg-yellow-700 text-white font-bold py-3 px-8 rounded-full transition duration-300">
+            View Menu
+          </a>
+          <a href="#reservations" class="bg-transparent hover:bg-white hover:text-black text-white font-bold py-3 px-8 border-2 border-white rounded-full transition duration-300">
+            Book Now
+          </a>
+        </div>
+      </div>
+
+      <!-- Scroll indicator -->
+      <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate__animated animate__fadeInUp animate__delay-2s animate__infinite">
+        <a href="#about" class="text-white animate-bounce">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+          </svg>
+        </a>
+      </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="relative max-w-7xl mx-auto px-6 sm:px-12 lg:px-16 py-16 grid grid-cols-1 md:grid-cols-2 gap-12 bg-gradient-to-br from-yellow-50 via-white to-yellow-100 overflow-hidden">
+      <div class="absolute inset-0 pointer-events-none opacity-5 bg-[url('https://www.transparenttextures.com/patterns/food.png')]"></div>
+
+      <div class="relative z-10 scroll-animate slide-up">
+        <h3 class="text-4xl font-extrabold mb-6 text-yellow-800">Our Story & Mission</h3>
+        <p class="text-lg leading-relaxed mb-10 max-w-xl text-gray-700">
+          <span class="font-semibold">The Taste of North Bengal</span> was founded in 2015 to bring the 
+          <span class="text-yellow-700 font-medium">authentic flavors</span> of North Bengal to food lovers. 
+          Our mission is to preserve <em>centuries-old recipes</em> while adding a modern twist in presentation, 
+          offering a dining experience that transports you to the lush landscapes, warm kitchens, and rich 
+          traditions of North Bengal.
+        </p>
+        <div class="grid grid-cols-2 gap-6 max-w-md">
+          <div class="bg-white rounded-lg shadow-md p-4 text-center hover:scale-105 transition">
+            <h4 class="text-3xl font-extrabold text-yellow-700">50+</h4>
+            <p class="text-sm text-gray-600">Authentic Dishes</p>
+          </div>
+          <div class="bg-white rounded-lg shadow-md p-4 text-center hover:scale-105 transition">
+            <h4 class="text-3xl font-extrabold text-yellow-700">100%</h4>
+            <p class="text-sm text-gray-600">Homemade Spices</p>
+          </div>
+          <div class="bg-white rounded-lg shadow-md p-4 text-center hover:scale-105 transition">
+            <h4 class="text-3xl font-extrabold text-yellow-700">25+</h4>
+            <p class="text-sm text-gray-600">Years Experience</p>
+          </div>
+          <div class="bg-white rounded-lg shadow-md p-4 text-center hover:scale-105 transition">
+            <h4 class="text-3xl font-extrabold text-yellow-700">5</h4>
+            <p class="text-sm text-gray-600">Generations of Recipes</p>
+          </div>
+        </div>
+      </div>
+      <div class="relative overflow-hidden rounded-xl shadow-xl group scroll-animate slide-up">
+        <img src="https://scontent.fixb5-1.fna.fbcdn.net/v/t39.30808-6/460290540_122104326824522361_6830235222295193273_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=RhyReJFJX1MQ7kNvwGXSm7N&_nc_oc=AdmdiuWwKasc-ud24yoeh8dIiC4rhA6MW9J-iYx0VczqfHqVqq74rXq375zBKHeYeHRLBZ7uyC0vtEz7dNYKONXv&_nc_zt=23&_nc_ht=scontent.fixb5-1.fna&_nc_gid=sB-yNxS2IGglV8vLqTbLsQ&oh=00_AfWB62ZqoV2WDFsIxEObgP9b8MB1zpgzmKB1J3O7x_YNsA&oe=689D526B" alt="LOGO" class="w-full h-full object-cover object-center transform group-hover:scale-105 transition-transform duration-500" />
+        <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+      </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="max-w-7xl mx-auto px-6 sm:px-12 lg:px-16 my-20">
+      <div class="bg-white rounded-2xl shadow-2xl p-8 border border-yellow-200">
+        <h3 class="text-4xl font-bold text-center mb-12 text-yellow-800">Our Menu</h3>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Starters -->
+          <div>
+            <h4 class="text-2xl font-semibold text-yellow-700 mb-4 text-center border-b-2 border-yellow-300 pb-2">Starters</h4>
+            <div class="space-y-4">
+              <div class="flex items-center p-3 rounded-lg hover:bg-yellow-50 transition">
+                <img src="https://scontent.fixb5-1.fna.fbcdn.net/v/t1.6435-9/61584185_2232886873415221_8471472977295179776_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=0b6b33&_nc_ohc=Z6FxpZdUKUYQ7kNvwGbG8Pj&_nc_oc=AdnU2C7MRkfDzrY-WYf91WaRHXurYzdnLIatFD_7XdLBGrJsV-nIfW4D1iyKDiWG6CcQbh4kpDQ91dJmm8DMb6YC&_nc_zt=23&_nc_ht=scontent.fixb5-1.fna&_nc_gid=kONKA8rQPKOXIoEle0hmew&oh=00_AfV6NIL6wRA1vRBG2r_qdFQflcnv-BcbXrCcnbYamiGNTg&oe=68BF0D04" alt="Mochar Chop" class="w-20 h-20 object-cover rounded-md shadow">
+                <div class="ml-3">
+                  <h5 class="font-bold text-base">Mochar Chop</h5>
+                  <p class="text-yellow-700 font-semibold">₹80</p>
+                </div>
+              </div>
+              <div class="flex items-center p-3 rounded-lg hover:bg-yellow-50 transition">
+                <img src="https://i.pinimg.com/736x/5b/01/eb/5b01ebae7749053b93d28639f78a53c3.jpg" alt="Fish Fry" class="w-20 h-20 object-cover rounded-md shadow">
+                <div class="ml-3">
+                  <h5 class="font-bold text-base">Fish Fry</h5>
+                  <p class="text-yellow-700 font-semibold">₹150</p>
+                </div>
+              </div>
+              <div class="flex items-center p-3 rounded-lg hover:bg-yellow-50 transition">
+                <img src="https://images.slurrp.com/prod/recipe_images/transcribe/snacks/Egg_Devil.webp?impolicy=slurrp-20210601&width=1200&height=675" alt="Egg Devil" class="w-20 h-20 object-cover rounded-md shadow">
+                <div class="ml-3">
+                  <h5 class="font-bold text-base">Egg Devil</h5>
+                  <p class="text-yellow-700 font-semibold">₹90</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Main Courses -->
+          <div>
+            <h4 class="text-2xl font-semibold text-yellow-700 mb-4 text-center border-b-2 border-yellow-300 pb-2">Main Courses</h4>
+            <div class="space-y-4">
+              <div class="flex items-center p-3 rounded-lg hover:bg-yellow-50 transition">
+                <img src="https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_450/https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_225/https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_768/https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_1152/https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_1170/https://notacurry.com/wp-content/uploads/2020/12/shukto-1.jpg" alt="Shukto" class="w-20 h-20 object-cover rounded-md shadow">
+                <div class="ml-3">
+                  <h5 class="font-bold text-base">Shukto</h5>
+                  <p class="text-yellow-700 font-semibold">₹110</p>
+                </div>
+              </div>
+              <div class="flex items-center p-3 rounded-lg hover:bg-yellow-50 transition">
+                <img src="https://www.whiskaffair.com/wp-content/uploads/2020/06/Bengali-Aloo-Posto-2-1.jpg" alt="Aloo Posto" class="w-20 h-20 object-cover rounded-md shadow">
+                <div class="ml-3">
+                  <h5 class="font-bold text-base">Aloo Posto</h5>
+                  <p class="text-yellow-700 font-semibold">₹120</p>
+                </div>
+              </div>
+              <div class="flex items-center p-3 rounded-lg hover:bg-yellow-50 transition">
+                <img src="https://twinklingtinacooks.com/wp-content/uploads/2021/04/chingri-malaikari-bengali-recipe-prawn-coconut-milk.jpg" alt="Chingri Malai Curry" class="w-20 h-20 object-cover rounded-md shadow">
+                <div class="ml-3">
+                  <h5 class="font-bold text-base">Chingri Malai Curry</h5>
+                  <p class="text-yellow-700 font-semibold">₹250</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Desserts -->
+          <div>
+            <h4 class="text-2xl font-semibold text-yellow-700 mb-4 text-center border-b-2 border-yellow-300 pb-2">Desserts</h4>
+            <div class="space-y-4">
+              <div class="flex items-center p-3 rounded-lg hover:bg-yellow-50 transition">
+                <img src="https://kitchenofdebjani.com/wp-content/uploads/2022/10/bengali-mishti-doi-recipe-debjanir-rannaghar.jpg" alt="Mishti Doi" class="w-20 h-20 object-cover rounded-md shadow">
+                <div class="ml-3">
+                  <h5 class="font-bold text-base">Mishti Doi</h5>
+                  <p class="text-yellow-700 font-semibold">₹100</p>
+                </div>
+              </div>
+              <div class="flex items-center p-3 rounded-lg hover:bg-yellow-50 transition">
+                <img src="https://pabraisindia.com/wp-content/uploads/2024/01/nolengur.webp" alt="Nolen Gur Ice Cream" class="w-20 h-20 object-cover rounded-md shadow">
+                <div class="ml-3">
+                  <h5 class="font-bold text-base">Nolen Gur Ice Cream</h5>
+                  <p class="text-yellow-700 font-semibold">₹150</p>
+                </div>
+              </div>
+              <div class="flex items-center p-3 rounded-lg hover:bg-yellow-50 transition">
+                <img src="https://cdn1.foodviva.com/static-content/food-images/desserts-sweets-recipes/rasgulla/rasgulla.jpg" alt="Rasgulla" class="w-20 h-20 object-cover rounded-md shadow">
+                <div class="ml-3">
+                  <h5 class="font-bold text-base">Rasgulla</h5>
+                  <p class="text-yellow-700 font-semibold">₹80</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ambience Section -->
+    <section class="max-w-7xl mx-auto px-6 sm:px-12 lg:px-16 my-20">
+      <h3 class="mt-24 text-4xl font-extrabold text-center mb-12 scroll-animate slide-up">
+        Our <em><i>Ambiance</i></em>
+      </h3>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <img src="https://www.tripsavvy.com/thmb/hXjYSZ5WnWacihT-Cap7XNHNHXY=/750x0/filters:no_upscale():max_bytes(150000):strip_icc()/DSC_6132-2ecc5d99e0864e3ca638d5a71c8b286a.jpg" alt="Traditional Bengali restaurant interior with warm lighting" class="rounded-xl shadow-lg object-cover w-full aspect-square gallery-img scroll-animate scale-in" style="animation-delay: 0.2s" />
+        <img src="https://images.lifestyleasia.com/wp-content/uploads/2019/09/30134146/PHOTO-2019-09-17-22-34-53-1.jpg?tr=w-1600" alt="Elegantly set dining table with traditional Bengali tableware" class="rounded-xl shadow-lg object-cover w-full aspect-square gallery-img scroll-animate scale-in" style="animation-delay: 0.4s" />
+        <img src="https://www.tripsavvy.com/thmb/QiVHouIVLrGQAqkqGBkYWOiiPHw=/750x0/filters:no_upscale():max_bytes(150000):strip_icc()/083c0719e2a900dc96a6675be1b03e8b-bf37096d95d443dd8268252379617b54.jpg" alt="Elegantly set dining table with traditional Bengali tableware" class="rounded-xl shadow-lg object-cover w-full aspect-square gallery-img scroll-animate scale-in" style="animation-delay: 0.4s" />
+        <img src="https://www.tripsavvy.com/thmb/uW4BU7Q0OE9kf2SwfOBnvOGbO_k=/750x0/filters:no_upscale():max_bytes(150000):strip_icc()/5498720ef8a52ae0a4ae7f39e0a18ee5-e109b019d3014e7bb1e2e6d080c158ec.jpg" alt="Elegantly set dining table with traditional Bengali tableware" class="rounded-xl shadow-lg object-cover w-full aspect-square gallery-img scroll-animate scale-in" style="animation-delay: 0.4s" />
+        <img src="https://www.tripsavvy.com/thmb/NWTxVcLwea74yoY6cCPLxXIwv7Y=/750x0/filters:no_upscale():max_bytes(150000):strip_icc()/120600937_3303186233131932_3118116665471943782_n-83e14752703d42729839f80511a291ac.jpg" alt="Elegantly set dining table with traditional Bengali tableware" class="rounded-xl shadow-lg object-cover w-full aspect-square gallery-img scroll-animate scale-in" style="animation-delay: 0.4s" />
+        <img src="https://www.tripsavvy.com/thmb/-mNfrJHwUuuVwxx5FT2zPiegSV0=/750x0/filters:no_upscale():max_bytes(150000):strip_icc()/5841531cfa95bd676b19d30a42a96360_1615131135-de2d6684391445deb3af665192730492.JPG" alt="Elegantly set dining table with traditional Bengali tableware" class="rounded-xl shadow-lg object-cover w-full aspect-square gallery-img scroll-animate scale-in" style="animation-delay: 0.4s" />
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="max-w-7xl mx-auto px-6 sm:px-12 lg:px-16 mt-20 mb-28">
+      <h3 class="text-4xl font-bold text-center mb-6 scroll-animate slide-up">
+        <i>Our Food Gallery</i>
+      </h3>
+      <p class="text-center text-lg max-w-4xl mx-auto mb-12 scroll-animate slide-up">
+        Explore images of our authentic dishes, inviting ambiance, and culinary artistry.
+      </p>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <img src="https://static.india.com/wp-content/uploads/2017/04/Bengali_Fish_meal.jpg?impolicy=Medium_Widthonly&w=700" alt="bengali thali" class="rounded-xl shadow-lg object-cover w-full aspect-square gallery-img scroll-animate" style="animation-delay: 0.1s" />
+        <img src="https://kitchenofdebjani.com/wp-content/uploads/2021/08/Ilish-Beguner-Jhol-recipe-debjanir-rannaghar.jpg" alt="ilish" class="rounded-xl shadow-lg object-cover w-full aspect-square gallery-img scroll-animate" style="animation-delay: 0.5s" />
+        <img src="https://shef.com/homemade-food/wp-content/uploads/stir-fried-tomato-egg.jpeg" alt="chinese" class="rounded-xl shadow-lg object-cover w-full aspect-square gallery-img scroll-animate" style="animation-delay: 0.5s" />
+        <img src="https://imgstaticcontent.lbb.in/lbbnew/wp-content/uploads/sites/7/2017/01/06012017_panipuri01.jpg?fm=webp&w=750&h=500&dpr=2" alt="Traditional Bengali street food - puchka" class="rounded-xl shadow-lg object-cover w-full aspect-square gallery-img scroll-animate" style="animation-delay: 0.4s" />
+        <img src="https://www.thecuriouschickpea.com/wp-content/uploads/2018/12/Tibetan-Veggie-Momos-1.jpg.webp" alt="momo" class="rounded-xl shadow-lg object-cover w-full aspect-square gallery-img scroll-animate" style="animation-delay: 0.5s" />
+        <img src="https://butfirstchai.com/wp-content/uploads/2022/08/1_Kosha_Mangsho_02.jpg" alt="kosha mangso" class="rounded-xl shadow-lg object-cover w-full aspect-square gallery-img scroll-animate" style="animation-delay: 0.5s" />
+        <img src="https://i0.wp.com/onewholesomemeal.com/wp-content/uploads/2020/03/Aaloo-Posto-1.jpg?w=864&ssl=1" alt="aloo " class="rounded-xl shadow-lg object-cover w-full aspect-square gallery-img scroll-animate" style="animation-delay: 0.5s" />
+        <img src="https://foodindian.org/wp-content/uploads/2022/08/malai-curry-chingri-edited-640x783-1.jpg" alt="chingri" class="rounded-xl shadow-lg object-cover w-full aspect-square gallery-img scroll-animate" style="animation-delay: 0.5s" />
+        <img src="https://bisarga.com/wp-content/uploads/2021/07/Bengali-Rosogolla-Bisarga-Food-Takeways-Food-Takeway-Kolkata-Howrah-Mumbai-Pune.jpg" alt="rosogolla" class="rounded-xl shadow-lg object-cover w-full aspect-square gallery-img scroll-animate" style="animation-delay: 0.5s" />
+      </div>
+    </section>
+
+    <!-- Events Section -->
+    <section class="max-w-7xl mx-auto px-6 sm:px-12 lg:px-16 mb-24">
+      <h3 class="text-4xl font-bold text-center mb-3 scroll-animate slide-up">
+        Special Events
+      </h3>
+      <p class="text-center mb-12 scroll-animate slide-up">
+        Join us for upcoming events and festivals at The Taste of North Bengal.
+      </p>
+      <div class="flex flex-col md:flex-row max-w-5xl mx-auto gap-12 md:gap-20 items-center justify-center">
+        <img src="https://www.tripsavvy.com/thmb/4VY7oKbo6Jhn_k_rVYhsSREPWMA=/750x0/filters:no_upscale():max_bytes(150000):strip_icc()/pic3-l-57fb70bb3df78c690f791e96.jpg" alt="Traditional Bengali food festival setup" class="rounded-xl shadow-lg object-cover w-full md:w-1/2 gallery-img scroll-animate slide-right" />
+        <div class="flex flex-col items-center md:items-start space-y-7 scroll-animate slide-up">
+          <div class="flex space-x-3 text-center md:text-left">
+            <div class="bg-black text-yellow-300 font-mono font-semibold px-6 py-4 rounded-md">
+              <span id="countdown-days">00</span><br /><span class="text-sm font-normal">Days</span>
+            </div>
+            <div class="bg-black text-yellow-300 font-mono font-semibold px-6 py-4 rounded-md">
+              <span id="countdown-hours">00</span><br /><span class="text-sm font-normal">Hours</span>
+            </div>
+            <div class="bg-black text-yellow-300 font-mono font-semibold px-6 py-4 rounded-md">
+              <span id="countdown-minutes">00</span><br /><span class="text-sm font-normal">Minutes</span>
+            </div>
+            <div class="bg-black text-yellow-300 font-mono font-semibold px-6 py-4 rounded-md">
+              <span id="countdown-seconds">00</span><br /><span class="text-sm font-normal">Seconds</span>
+            </div>
+          </div>
+          <h4 class="text-3xl font-bold">Durga Puja Special</h4>
+          <p class="max-w-md text-lg font-medium">
+            Experience our exclusive Durga Puja thali featuring traditional
+            Bengali dishes prepared with authentic recipes passed down through
+            generations.
+          </p>
+          <a href="#reservations" class="px-14 py-3 rounded-full font-bold text-white bg-yellow-600 hover:bg-yellow-700 transition-all duration-500 hover:scale-105 hover:shadow-[0_0_15px_rgba(234,179,8,0.7)]">
+            Reserve Now
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reservation Form Section -->
+    <section id="reservations" class="bg-white max-w-3xl mx-auto px-6 sm:px-12 lg:px-16 py-20 rounded-xl shadow-lg mb-24 scroll-animate zoomIn">
+      <div class="text-center">
+        <h3 class="text-4xl font-bold mb-4 text-gray-800">
+          Make a Reservation
+        </h3>
+        <p class="text-lg text-gray-600 max-w-2xl mx-auto mb-10">
+          We'd love to have you dine with us! Please fill out the form below to
+          request a reservation. We will confirm your reservation within 24
+          hours.
+        </p>
+      </div>
+
+      <form action="#" method="POST" class="space-y-8" aria-label="Reservation Form">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div class="relative">
+            <label for="date" class="block text-sm font-medium text-gray-700 mb-1">Date</label>
+            <div class="relative">
+              <input type="date" id="date" name="date" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-yellow-500 focus:border-yellow-500 transition-all duration-200" required />
+              <div class="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none">
+                <svg class="h-5 w-5 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <div class="relative">
+            <label for="time" class="block text-sm font-medium text-gray-700 mb-1">Time</label>
+            <div class="relative">
+              <input type="time" id="time" name="time" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-yellow-500 focus:border-yellow-500 transition-all duration-200" required />
+              <div class="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none">
+                <svg class="h-5 w-5 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <label for="guests" class="block text-sm font-medium text-gray-700 mb-1">Number of Guests</label>
+            <select id="guests" name="guests" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-yellow-500 focus:border-yellow-500 transition-all duration-200" required>
+              <option value="" disabled selected>Select guests</option>
+              <option value="1">1 person</option>
+              <option value="2">2 people</option>
+              <option value="3">3 people</option>
+              <option value="4">4 people</option>
+              <option value="5">5 people</option>
+              <option value="6">6 people</option>
+              <option value="7">7 people</option>
+              <option value="8">8+ people</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="occasion" class="block text-sm font-medium text-gray-700 mb-1">Special Occasion (Optional)</label>
+            <select id="occasion" name="occasion" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-yellow-500 focus:border-yellow-500 transition-all duration-200">
+              <option value="" selected>None</option>
+              <option value="birthday">Birthday</option>
+              <option value="anniversary">Anniversary</option>
+              <option value="business">Business Dinner</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="space-y-6">
+          <div>
+            <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Full Name</label>
+            <input type="text" id="name" name="name" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-yellow-500 focus:border-yellow-500 transition-all duration-200" placeholder="Your full name" required />
+          </div>
+
+          <div>
+            <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email Address</label>
+            <input type="email" id="email" name="email" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-yellow-500 focus:border-yellow-500 transition-all duration-200" placeholder="your.email@example.com" required />
+          </div>
+
+          <div>
+            <label for="phone" class="block text-sm font-medium text-gray-700 mb-1">Phone Number</label>
+            <input type="tel" id="phone" name="phone" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-yellow-500 focus:border-yellow-500 transition-all duration-200" placeholder="+91 98765 43210" required />
+          </div>
+
+          <div>
+            <label for="notes" class="block text-sm font-medium text-gray-700 mb-1">Special Requests</label>
+            <textarea id="notes" name="notes" rows="3" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-yellow-500 focus:border-yellow-500 transition-all duration-200" placeholder="Dietary restrictions, seating preferences, etc."></textarea>
+          </div>
+        </div>
+
+        <div class="pt-6 text-center">
+          <button type="submit" id="submitBtn" class="relative overflow-hidden px-16 py-4 rounded-full font-bold text-white bg-gradient-to-r from-yellow-500 to-yellow-600 hover:from-yellow-600 hover:to-yellow-700 transition-all duration-500 hover:shadow-lg hover:shadow-yellow-500/30 group">
+            <span id="btnText" class="relative z-10 flex items-center justify-center gap-2">
+              <svg id="submitIcon" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+              </svg>
+              Submit Reservation
+            </span>
+            <span class="absolute inset-0 bg-gradient-to-r from-yellow-600 to-yellow-700 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></span>
+            <svg id="spinner" class="hidden absolute h-5 w-5 animate-spin text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+              <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+              <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+            </svg>
+          </button>
+        </div>
+      </form>
+    </section>
+
+    <!-- Customer Praise Section -->
+    <section class="bg-gray-50 py-20 px-6 sm:px-12 lg:px-16">
+      <div class="max-w-5xl mx-auto text-center mb-14">
+        <h3 class="text-3xl sm:text-4xl font-extrabold text-gray-900 scroll-animate slide-up">
+          Customer Praise
+        </h3>
+        <p class="mt-4 text-gray-600 leading-relaxed scroll-animate slide-up">
+          Our guests love their experience at The Taste of North Bengal — praising our authentic cuisine and warm hospitality. Here's what satisfied diners have to say about their memorable visits.
+        </p>
+      </div>
+
+      <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+        <blockquote class="bg-white border border-gray-200 rounded-2xl p-8 shadow-sm hover:shadow-lg transition-shadow duration-300 flex flex-col justify-between scroll-animate" style="animation-delay:0.2s">
+          <div>
+            <div class="flex mb-3 text-yellow-500 text-lg">★★★★★</div>
+            <p class="text-gray-700 leading-relaxed">
+              "The Taste of North Bengal brought back childhood memories of my grandmother's cooking. Authentic flavors and an ambiance that transported me back to Siliguri."
+            </p>
+          </div>
+          <footer class="mt-6 flex items-center space-x-4">
+            <img class="h-12 w-12 rounded-full object-cover ring-2 ring-gray-100" src="https://webfiles.amrita.edu/2023/11/F9F1S3uj-s-bagavathi-priya.jpg" alt="Priya Chatterjee">
+            <div>
+              <p class="font-semibold text-gray-900">Priya Chatterjee</p>
+              <p class="text-gray-500 text-sm">Food Blogger, Kolkata</p>
+            </div>
+          </footer>
+        </blockquote>
+
+        <blockquote class="bg-white border border-gray-200 rounded-2xl p-8 shadow-sm hover:shadow-lg transition-shadow duration-300 flex flex-col justify-between scroll-animate" style="animation-delay:0.4s">
+          <div>
+            <div class="flex mb-3 text-yellow-500 text-lg">★★★★★</div>
+            <p class="text-gray-700 leading-relaxed">
+              "The kosha mangsho was perfection! As someone from Darjeeling, this is the most authentic North Bengali food I've had outside my hometown."
+            </p>
+          </div>
+          <footer class="mt-6 flex items-center space-x-4">
+            <img class="h-12 w-12 rounded-full object-cover ring-2 ring-gray-100" src="https://t4.ftcdn.net/jpg/06/40/07/03/240_F_640070383_9LJ3eTRSvOiwKyrmBYgcjhSlckDnNcxl.jpg" alt="Rajiv Sharma">
+            <div>
+              <p class="font-semibold text-gray-900">Rajiv Sharma</p>
+              <p class="text-gray-500 text-sm">Restaurant Critic, Darjeeling</p>
+            </div>
+          </footer>
+        </blockquote>
+
+        <blockquote class="bg-white border border-gray-200 rounded-2xl p-8 shadow-sm hover:shadow-lg transition-shadow duration-300 flex flex-col justify-between scroll-animate" style="animation-delay:0.6s">
+          <div>
+            <div class="flex mb-3 text-yellow-500 text-lg">★★★★★</div>
+            <p class="text-gray-700 leading-relaxed">
+              "Our family had an unforgettable dinner here. The thakurbari ranna thali was divine. We'll definitely return for more authentic flavors."
+            </p>
+          </div>
+          <footer class="mt-6 flex items-center space-x-4">
+            <img class="h-12 w-12 rounded-full object-cover ring-2 ring-gray-100" src="https://c8.alamy.com/comp/W4F7PA/portrait-of-a-bengali-woman-smiling-W4F7PA.jpg" alt="Ananya Banerjee">
+            <div>
+              <p class="font-semibold text-gray-900">Ananya Banerjee</p>
+              <p class="text-gray-500 text-sm">Regular Customer</p>
+            </div>
+          </footer>
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="max-w-6xl mx-auto px-6 py-16">
+      <div class="bg-white border border-gray-200 rounded-xl shadow-sm grid md:grid-cols-3 divide-y md:divide-y-0 md:divide-x">
+        <div class="p-8 text-center">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 mx-auto mb-4 text-yellow-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M16 12h2a2 2 0 002-2v-1a2 2 0 00-2-2h-2M8 12H6a2 2 0 00-2 2v1a2 2 0 002 2h2m4-3v2m0-6v4m0 2v2"/>
+          </svg>
+          <h4 class="text-lg font-semibold text-gray-900">Email Us</h4>
+          <p class="text-gray-600 text-sm">For reservations, inquiries, or feedback.</p>
+          <p class="mt-2 font-medium text-yellow-700">contact@tasteofnorthbengal.com</p>
+        </div>
+        
+        <div class="p-8 text-center">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 mx-auto mb-4 text-yellow-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3 10h.01M7 10h.01M11 10h.01M15 10h.01M19 10h.01M9 16h6m2 2H7a2 2 0 01-2-2V6a2 2 0 012-2h4l2 2h4a2 2 0 012 2v8a2 2 0 01-2 2z"/>
+          </svg>
+          <h4 class="text-lg font-semibold text-gray-900">Call Us</h4>
+          <p class="text-gray-600 text-sm">Speak with our staff for assistance.</p>
+          <p class="mt-2 font-medium text-yellow-700">+91 98765 43210</p>
+        </div>
+        
+        <div class="p-8 text-center">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 mx-auto mb-4 text-yellow-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.828 0l-4.243-4.243a8 8 0 1111.314 0z"/>
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+          </svg>
+          <h4 class="text-lg font-semibold text-gray-900">Visit Us</h4>
+          <p class="text-gray-600 text-sm">123 Hill Cart Road, Siliguri</p>
+          <p class="mt-2 font-medium text-yellow-700">West Bengal 734001</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Google Maps Section -->
+    <section class="max-w-7xl mx-auto px-6 sm:px-12 lg:px-16 mb-20">
+      <div class="rounded-2xl overflow-hidden shadow-xl border border-gray-200 bg-white scroll-animate slide-up transition-transform duration-300 hover:scale-[1.01]">
+        <div class="bg-gradient-to-r from-green-500 to-green-700 text-white p-4">
+          <h2 class="text-lg sm:text-xl font-semibold">
+            📍 The Taste of North Bengal — Location
+          </h2>
+        </div>
+        <iframe title="The Taste of North Bengal Location Map" class="w-full h-96 border-0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3563.102316750623!2d88.4282143150425!3d26.72774008320701!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39e441766b5e0f4d%3A0x1e050d1a7e8a3a0d!2sSiliguri%2C%20West%20Bengal!5e0!3m2!1sen!2sin!4v1620000000000!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="bg-gray-50 p-3 text-center text-sm text-gray-600">
+          Click on the map to explore directions
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-100 py-12 px-6 sm:px-12 lg:px-16">
+      <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
+        <div class="scroll-animate slide-up">
+          <h5 class="font-bold text-lg mb-4">Explore</h5>
+          <ul class="space-y-2 text-gray-700">
+            <li><a href="#about" class="hover:underline hover:text-yellow-600 transition duration-300">About Us</a></li>
+            <li><a href="#reservations" class="hover:underline hover:text-yellow-600 transition duration-300">Reservations</a></li>
+            <li><a href="#menu" class="hover:underline hover:text-yellow-600 transition duration-300">Menu</a></li>
+            <li><a href="#gallery" class="hover:underline hover:text-yellow-600 transition duration-300">Gallery</a></li>
+          </ul>
+        </div>
+        <div class="scroll-animate slide-up" style="animation-delay: 0.1s">
+          <h5 class="font-bold text-lg mb-4">Our Specialties</h5>
+          <ul class="space-y-2 text-gray-700">
+            <li><a href="#" class="hover:underline hover:text-yellow-600 transition duration-300">Kosha Mangsho</a></li>
+            <li><a href="#" class="hover:underline hover:text-yellow-600 transition duration-300">Aloo Posto</a></li>
+            <li><a href="#" class="hover:underline hover:text-yellow-600 transition duration-300">Macher Jhol</a></li>
+            <li><a href="#" class="hover:underline hover:text-yellow-600 transition duration-300">Shorshe Ilish</a></li>
+          </ul>
+        </div>
+        <div class="scroll-animate slide-up" style="animation-delay: 0.2s">
+          <h5 class="font-bold text-lg mb-4">Connect</h5>
+          <ul class="space-y-2 text-gray-700">
+            <li><a href="#" class="hover:underline hover:text-yellow-600 transition duration-300">Instagram</a></li>
+            <li><a href="#" class="hover:underline hover:text-yellow-600 transition duration-300">Facebook</a></li>
+            <li><a href="#" class="hover:underline hover:text-yellow-600 transition duration-300">Twitter</a></li>
+          </ul>
+        </div>
+        <div class="scroll-animate slide-up" style="animation-delay: 0.3s">
+          <h5 class="font-bold text-lg mb-4">Stay Updated</h5>
+          <p class="mb-4 text-gray-700">
+            Subscribe to our newsletter for special offers and events.
+          </p>
+          <form id="newsletterForm" class="flex gap-2 max-w-md">
+            <label for="newsletterEmail" class="sr-only">Email address</label>
+            <input type="email" id="newsletterEmail" placeholder="Enter your email" required class="w-full px-4 py-2 rounded-l-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:border-yellow-500" />
+            <button type="submit" class="bg-yellow-600 hover:bg-yellow-700 text-white font-semibold px-6 py-2 rounded-r-full transition duration-300">
+              Subscribe
+            </button>
+          </form>
+        </div>
+      </div>
+      <div class="border-t border-gray-300 mt-12 pt-6 flex justify-between items-center max-w-7xl mx-auto text-gray-700 text-sm scroll-animate slide-up">
+        <p>© 2025 The Taste of North Bengal. All rights reserved.</p>
+        <div class="space-x-6">
+          <a href="#" class="hover:underline hover:text-yellow-600 transition duration-300">Terms and Conditions</a>
+          <span>|</span>
+          <a href="#" class="hover:underline hover:text-yellow-600 transition duration-300">Privacy Policy</a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Countdown Timer for Durga Puja Event
+      function updateCountdown() {
+        const countdownDate = new Date("Sept 26, 2025 00:00:00").getTime();
+        const now = new Date().getTime();
+        const distance = countdownDate - now;
+        
+        if (distance < 0) {
+          clearInterval(countdownTimer);
+          document.getElementById("countdown-days").textContent = "00";
+          document.getElementById("countdown-hours").textContent = "00";
+          document.getElementById("countdown-minutes").textContent = "00";
+          document.getElementById("countdown-seconds").textContent = "00";
+          return;
+        }
+        
+        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        
+        animateCountdownValue("countdown-days", days);
+        animateCountdownValue("countdown-hours", hours);
+        animateCountdownValue("countdown-minutes", minutes);
+        animateCountdownValue("countdown-seconds", seconds);
+      }
+
+      function animateCountdownValue(elementId, newValue) {
+        const element = document.getElementById(elementId);
+        const currentValue = parseInt(element.textContent);
+
+        if (currentValue !== newValue) {
+          element.classList.add("changing");
+          setTimeout(() => {
+            element.textContent = newValue.toString().padStart(2, "0");
+            element.classList.remove("changing");
+          }, 150);
+        }
+      }
+
+      const countdownTimer = setInterval(updateCountdown, 1000);
+      updateCountdown();
+
+      // Form Submission
+      document.querySelector("form").addEventListener("submit", function (e) {
+        e.preventDefault();
+        const btn = document.getElementById("submitBtn");
+        const btnText = document.getElementById("btnText");
+        const spinner = document.getElementById("spinner");
+        const submitIcon = document.getElementById("submitIcon");
+
+        btn.disabled = true;
+        submitIcon.classList.add("hidden");
+        spinner.classList.remove("hidden");
+        btnText.innerHTML = "Processing...";
+
+        setTimeout(() => {
+          spinner.classList.add("hidden");
+          btnText.innerHTML = "Reservation Confirmed!";
+          btn.classList.remove("from-yellow-500", "to-yellow-600", "hover:from-yellow-600", "hover:to-yellow-700");
+          btn.classList.add("from-green-500", "to-green-600");
+
+          setTimeout(() => {
+            this.reset();
+            btn.disabled = false;
+            btnText.innerHTML = `<svg id="submitIcon" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+            </svg> Submit Reservation`;
+            btn.classList.remove("from-green-500", "to-green-600");
+            btn.classList.add("from-yellow-500", "to-yellow-600", "hover:from-yellow-600", "hover:to-yellow-700");
+          }, 3000);
+        }, 2000);
+      });
+
+      // Newsletter Form
+      document.getElementById("newsletterForm").addEventListener("submit", function(e) {
+        e.preventDefault();
+        const email = document.getElementById("newsletterEmail").value;
+        if (email) {
+          alert(`Thank you for subscribing with email: ${email}`);
+          this.reset();
+        }
+      });
+
+      // Scroll Animations
+      const scrollObserver = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("animate");
+          }
+        });
+      }, { threshold: 0.1 });
+
+      document.querySelectorAll(".scroll-animate").forEach((el) => {
+        scrollObserver.observe(el);
+      });
+    </script>
+  </body>
+</html>
